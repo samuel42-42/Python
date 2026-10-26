@@ -7,13 +7,14 @@
       <env name="PYTHONUNBUFFERED" value="1" />
     </envs>
     <option name="SDK_HOME" value="" />
-    <option name="SDK_NAME" value="~\Desktop\TareasFP\DAM 2º\Python\.venv" />
+    <option name="SDK_NAME" value="~\PycharmProjects\WelcomeScreen\.venv" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tema2" />
     <option name="IS_MODULE_SDK" value="false" />
     <option name="ADD_CONTENT_ROOTS" value="true" />
     <option name="ADD_SOURCE_ROOTS" value="true" />
     <option name="DEBUG_JUST_MY_CODE" value="false" />
     <module name="" />
+    <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
     <option name="RUN_TOOL" value="" />
     <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tema2/MatrizTemp.py" />
     <option name="PARAMETERS" value="" />
