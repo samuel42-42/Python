@@ -1,14 +1,15 @@
-from operator import add
-
 sistema = {}
 Perfil = ("Sin acceso","Acceso básico","Acceso estándar","Acceso Premium","Administrador")
 user = input("Nick?: ")
 while True:
         nick = input(f"¡Hola {user}! Introduce el login de usuario: ")
         if len(sistema)!=0:
-            if nick in sistema.get("Usuario").get("Login") is True:
-                while nick in sistema.get("Usuario"):
-                    nick = input(f"> {user}, ese login ya existe, prueba de nuevo")
+            while True:
+                if nick in sistema:
+                    nick = input(f"> {user}, ese login ya existe, prueba de nuevo: ")
+                else:
+                    break
+
 
         password = input(f"> {nick}, Introduce la contraseña: ")
         while True:
@@ -21,9 +22,8 @@ while True:
                 print("Esa opción no está")
 
         user_dic = {"Login": nick, "Password": password, "Perfil": user_perf}
-        sistema["Usuario"].add(user_dic)
+        sistema[nick]=user_dic
         salir = input("Quieres salir?(Se borran los datos) [y/n]")
 
         if salir == "y":
-            print(sistema)
             break
